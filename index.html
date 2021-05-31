@@ -1,22 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--allows for dropdown on hover-->
+    <style type="text/CSS"> 
+        .dropdown:hover .dropdown-menu{
+          display: block;
+        }
+        .dropdown:hover .dropdown-menu{ 
+          color: blue;
+        }
+      </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Tech Talent South</title>
+    <title>Tech Talent South | Information Technology Recruiting & Training</title>
+ <!--Link to external bootstrap stylesheet-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<!--LINK TO FONTS USED-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!--link to CSS stylesheet for styling of page-->
     <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
-   <!-- Header will go here-->
-   <!-- Whatever page you want to build-->
-   <!--Tommy's About page-->
-   <!--Tommy's Footer-->
+<!--Navbar Stuff-->
+<nav class="navbar fixed-top ml-auto navbar-expand-lg navbar-light" style="background-color: white;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="https://www.techtalentsouth.com/hubfs/Nav%20Logo%20(1).png" width="120" height="48">
+      </a>
+      <button class="navbar-toggler custom_navbar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menu-btn"> <!--custom button link stuff-->
+          <div class="menu-btn__burger"></div>
+      </div>
+      </button>
+     <!--if deleted, dropdown works but spacing when non-compressed is wrong-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto navbar-items">
+            
+          <!--First dropdown menu-->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hire Talent
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Hire Talent</a>
+                <a class="dropdown-item" href="#">Upskill Academy</a>
+              </div>
+              </li>
+            <!--second dropdown menu-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Get Hired
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Join TTS</a>
+                <a class="dropdown-item" href="#">Graduate Accelerator Program (GAP)</a>
+                <a class="dropdown-item" href="#">Veterans Tech Accelerator (VTA)</a>
+                <a class="dropdown-item" href="#">Apply for Open Jobs</a>
+                <a class="dropdown-item" href="#">Enroll in Course</a>
+              </div>
+            </li>
+            <!--Link to about us-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <!--Link to get started button-->
+            <li>
+              <button type="button" class="btn btn-lg  btn-primary">Get Started</button>
+        </ul>
+        </div>
+        </div>
+        </form>
+        </div>
+      </div>
+    </nav>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+<!--intro stuff with hero image and everything.-->
+<div class="cover-pictures">
+<!--figure out how to put bg image here-->
+</div>
+<div class="central-title">
+<h1 class="white-text top-title">Build Your Team</h1>
+<div class="subheader">
+<p>
+  At Tech Talent South, we serve organizations of all sizes by providing diverse talent pipelines supported by over 100 hours of data on every candidate. We help our hiring partners drive growth, innovation, and diversity through our proven recruiting, training, and staffing services.
+</p>
+</div>
+</div>
+
+<!--subheader after hero image and big intro stuff-->
+<div class="container subsubheader content-wrapper">
+<div class="row">
+  <div class="second-title-thing">
+    <h2 class="col-heading">Think of us as your one-stop-shop for talent solutions</h2>
+    <p class="italic">Tech Talent South offers flexible talent solutions for teams of all sizes and at all stages.
+    </p>
+  </div>
+</div>
+</div>
+
+<!--three columns subheader-->
+<div class="container features content-wrapper">
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        <h3 class="col-heading">Recruiting</h3>
+        <p> Hire from a diverse pool of strategically sourced and screened experts, vetted over the course of 100+ hours of training and assessments.</p>	
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <h3 class="col-heading">Training</h3>
+        <p> With a proven high capacity for learning and leadership skills, we give you the kind of talent you can put in front of a client and the kind of teammate that adds value.</p>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <h3 class="col-heading" font-style="bold">Staffing</h3>
+        <p>Whether it’s a short-term task or full-time work, you can find a diverse database of qualified talent quickly that can grow with you as your needs change.</p>
+    </div>
+</div>
+</div>
+
+<!--first infor/image stuff, title/info on right, image on left-->
+<div class="container features content-wrapper">
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <img class="img-fluid" src="https://www.techtalentsouth.com/hs-fs/hubfs/shutterstock_1099307402.jpg?width=3680&height=2456&name=shutterstock_1099307402.jpg">
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <h2 class="col-heading">Ready to Hire?</h2>
+        <p> Quickly search and connect with high-quality talent so you can execute on time and on-budget. Leverage our premium hands-on talent placement support with a curated list of candidates or access our full talent database at any time. Get the knowledge and security of so much more than just a resume with over 100+ hours of data and assessments.</p>
+        <button type="button" class="btn btn-primary">Hire Talent</button>
+     </div>   
+</div>
+</div>
+
+<!--second infor/image stuff, title/info on left, image on right-->
+<div class="container features content-wrapper">
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <h2 class="col-heading">Train for the Digital Workforce</h2>
+        <p> We are proud to say we have been ranked Best Coding Bootcamp 5 years running by SwitchUp. There has never been a better time to equip yourself with the most sought after skillsets for the digital workforce. From full-stack development to data-science, our intensive training programs prepare you for the demands of our hiring partners. Tap into our community and see for yourself.</p>
+        <button type="button" class="btn btn-primary">Get Hired</button>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <img class="img-fluid" src="https://www.techtalentsouth.com/hs-fs/hubfs/shutterstock_1626375442.jpg?width=3311&height=2208&name=shutterstock_1626375442.jpg">
+    </div>
+</div>
+</div>
+
+<!--embedded video section-->
+<!--needs background here as well! bg link i cannot find?-->
+<div class="container embedded-video content-wrapper">
+<div class="row">
+  <div class="col-md-10 offset-md-1">
+    <h2 class="section-heading">Built for Everyone</h2>
+    <div class="section-description">Bespoke solutions for all tech talent needs</div>
+    <div class="col-md-12">
+      <div class="content-wrapper">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://f.hubspotusercontent40.net/hubfs/2577343/TTS%20Lowes.mp4" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Testamonial section, need image i cannot get?-->
+
+<div class="container testamonial content-wrapper">
+<div class="row">
+  <div class="intro-section">
+  <h2 class="heading-testamonial">Featured Testamonial</h2>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">"I've worked in partnership with, and hired graduates from Tech Talent South. They work quickly, learn and iterate, and drive incredible quality graduates into the workforce."</p>
+      <p class="testamonial-name">John Espey</p>
+      <p class="testamonial-title">CEO/CO-FOUNDER OF DEFIANCE VENTURES, FOUNDER OF AMENTRA (SOLD TO RED HAT), CO-FOUNDER OF LEVVEL.IO, CEO OF LOBBY CRE</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--About TTS section-->
+<div class="container content-wrapper">
+<div class="row">
+  <div class="col-md-12">
+    <div class="content-wrapper">
+      <h5 class="final-subheading">
+        Information Technology Recruiting, Training, and Staffing
+      </h5>
+      <h3 class="col-heading">About Tech Talent South</h3>
+      <div class="col-content">
+        <p>
+          Information technology recruiting is made simple with Tech Talent South’s technical education ecosystem of individuals, corporations, and talent pipeline partners. As an information technology staffing agency and provider of technical training on a diverse range of subjects, we have been serving corporations and individuals alike with customized talent pipelines to help bridge the gap between corporate goals and the talent acquisition that is necessary to achieve them. No matter your current talent needs, our team will help you meet them at scale and with speed. Our talented pool of candidates makes information technology recruiting simple for businesses of all sizes. Discover what we can do for you or your business today.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Footer stuff goes here!-->
+
+ <!--  Do not mess with these, they are needed for the bootstrap to run -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!-- Do not mess with this, this is what makes the button animate-->
+      <script src="TechTalent.js"></script>
+<!--Link to other javascript sheet if needed-->
+      <script src="script.js"></script>
 </body>
 </html>
